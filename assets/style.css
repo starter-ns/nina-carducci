@@ -101,12 +101,15 @@ body {
 	justify-content: center;
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-	color: #fff;
+	color: #000000;
 	background-color: #BEB45A;
 	border-radius:0 ;
 }
 .nav-pills .nav-link {
 	color: #000
+}
+.visually-hidden{
+	color: #000000;
 }
 .item-column {
 	position: relative;
@@ -353,4 +356,5 @@ input[type="submit"] {
 		width: 80%;
 	}
 }
+
 
