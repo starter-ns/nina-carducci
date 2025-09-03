@@ -249,6 +249,15 @@ input[type="submit"] {
 	background-color: #BEB45A;
 	padding: .5em 1em
 }
+#header .carousel-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+img { height: auto; }
+
+/* carousel images should scale with their container */
+#header .carousel-item img { width: 100%; }
 
 @media all and (max-width: 1180px) {
 	.picture {
