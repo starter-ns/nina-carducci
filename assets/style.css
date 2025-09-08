@@ -203,6 +203,9 @@ body {
 	padding-inline: 100px;
 	padding-block: 100px;
 }
+.visually-hidden {
+  color: #000000;
+}
 
 #contact .container {
 	display: flex;
