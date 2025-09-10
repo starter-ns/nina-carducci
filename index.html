@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <!-- Essentials first -->
+  <!-- Essentials -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- SEO basics -->
-  <title>Nina Carducci</title>
+  <title>Nina Carducci | Photographe à Bordeaux (mariages, portraits, événements)</title>
   <meta name="description" content="Nina Carducci, photographe professionnelle à Bordeaux. Mariages, portraits et événements capturés avec élégance et authenticité. Devis rapide, déplacement en Gironde." />
-  <link rel="canonical" href="https://your-domain.tld/" /> <!-- TODO: remplacez par l’URL canonique absolue de votre page -->
+  <link rel="canonical" href="https://starter-ns.github.io/nina-carducci/" />
   <meta name="robots" content="index, follow" />
+  <link rel="icon" href="https://starter-ns.github.io/nina-carducci/favicon.ico" />
 
   <!-- Open Graph (Facebook/LinkedIn/WhatsApp) -->
   <meta property="og:title" content="Nina Carducci | Photographe à Bordeaux" />
   <meta property="og:description" content="Mariages, portraits et événements capturés avec élégance et authenticité." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://your-domain.tld/" /> <!-- TODO: même URL canonique -->
-  <meta property="og:image" content="https://starter-ns.github.io/nina-carducci/assets/images/nina.jpg" /> <!-- TODO: utilisez une image 1200×630 min -->
+  <meta property="og:url" content="https://starter-ns.github.io/nina-carducci/" />
+  <meta property="og:image" content="https://starter-ns.github.io/nina-carducci/assets/images/nina.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Photographies par Nina Carducci à Bordeaux" />
   <meta property="og:site_name" content="Nina Carducci" />
   <meta property="og:locale" content="fr_FR" />
 
@@ -25,9 +29,8 @@
   <meta name="twitter:title" content="Nina Carducci | Photographe à Bordeaux" />
   <meta name="twitter:description" content="Mariages, portraits et événements capturés avec élégance et authenticité." />
   <meta name="twitter:image" content="https://starter-ns.github.io/nina-carducci/assets/images/nina.jpg" />
-  <!-- <meta name="twitter:site" content="@VotreHandle">  Optionnel si vous avez un compte X/Twitter -->
 
-  <!-- Preconnect & styles -->
+  <!-- Fonts & styles -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" onload="this.rel='stylesheet'">
@@ -37,26 +40,50 @@
   <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
   <link rel="stylesheet" href="./assets/style.css" />
 
-  <!-- Performance: keep a single preload for the first hero image -->
+  <!-- Performance: single preload for first hero image -->
   <link rel="preload" as="image" href="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg" imagesrcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg 1068w" />
 
-  <!-- Schema.org JSON-LD for Local SEO / Rich Results -->
+  <!-- Schema.org JSON-LD: Organization (brand/site-level) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://starter-ns.github.io/nina-carducci/#organization",
+    "name": "Nina Carducci",
+    "url": "https://starter-ns.github.io/nina-carducci/",
+    "logo": "https://starter-ns.github.io/nina-carducci/assets/images/logo.png",
+    "sameAs": [
+      "https://www.instagram.com/ninacarducci.photo/"
+    ]
+  }
+  </script>
+
+  <!-- Schema.org JSON-LD: LocalBusiness (rich results) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "ProfessionalService"],
+    "@id": "https://starter-ns.github.io/nina-carducci/#business",
     "name": "Nina Carducci",
     "image": "https://starter-ns.github.io/nina-carducci/assets/images/nina.jpg",
-    "url": "https://your-domain.tld/",
+    "logo": "https://starter-ns.github.io/nina-carducci/assets/images/logo.png",
+    "url": "https://starter-ns.github.io/nina-carducci/",
     "telephone": "+33 6 12 34 56 78",
     "priceRange": "€€",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "123 Rue de la Photographie",
       "addressLocality": "Bordeaux",
+      "addressRegion": "Nouvelle-Aquitaine",
       "postalCode": "33000",
       "addressCountry": "FR"
     },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 44.837789,
+      "longitude": -0.57918
+    },
+    "hasMap": "https://www.google.com/maps?q=44.837789,-0.57918",
     "areaServed": "Bordeaux et Gironde",
     "openingHoursSpecification": [{
       "@type": "OpeningHoursSpecification",
@@ -79,10 +106,10 @@
       <ul>
         <li><a href="#about">À propos</a></li>
         <li><a href="#gallery">Galerie</a></li>
-        <li><a href="#services">Services</a></li> <!-- petite correction d’intitulé -->
+        <li><a href="#services">Services</a></li>
         <li><a href="#contact">Contact</a></li>
         <li>
-          <a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank" rel="noopener">
+          <a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank" rel="noopener noreferrer">
             <img src="assets/images/instagram.png" alt="Instagram Nina Carducci" width="20" height="20" loading="lazy">
           </a>
         </li>
