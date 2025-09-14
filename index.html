@@ -43,7 +43,7 @@
   <!-- Performance: single preload for first hero image -->
   <link rel="preload" as="image" href="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg" imagesrcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg 1068w" />
 
-  <!-- Schema.org JSON-LD: Organization (brand/site-level) -->
+  <!-- Schema.org JSON-LD: Organization (site-level) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -52,42 +52,30 @@
     "name": "Nina Carducci",
     "url": "https://starter-ns.github.io/nina-carducci/",
     "logo": "https://starter-ns.github.io/nina-carducci/assets/images/logo.png",
-    "sameAs": [
-      "https://www.instagram.com/ninacarducci.photo/"
-    ]
+    "sameAs": ["https://www.instagram.com/ninacarducci.photo/"]
   }
   </script>
 
-  <!-- Schema.org JSON-LD: LocalBusiness (rich results) -->
+  <!-- Schema.org JSON-LD: LocalBusiness (ONLY the info provided) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": ["LocalBusiness", "ProfessionalService"],
-    "@id": "https://starter-ns.github.io/nina-carducci/#business",
+    "@type": "LocalBusiness",
     "name": "Nina Carducci",
-    "image": "https://starter-ns.github.io/nina-carducci/assets/images/nina.jpg",
-    "logo": "https://starter-ns.github.io/nina-carducci/assets/images/logo.png",
-    "url": "https://starter-ns.github.io/nina-carducci/",
-    "telephone": "+33 5 56 67 78 89",
-    "priceRange": "€€",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "68 avenue Alsace-Lorraine",
       "addressLocality": "Bordeaux",
       "postalCode": "33200",
-      "addressCountry": "FR"
+      "addressCountry": "France"
     },
+    "telephone": "+33 (0)5 56 67 78 89",
     "openingHoursSpecification": [{
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
       "opens": "10:00",
       "closes": "19:00"
-    }],
-    "areaServed": "Bordeaux et Gironde",
-    "sameAs": [
-      "https://www.instagram.com/ninacarducci.photo/"
-    ],
-    "description": "Photographe professionnelle à Bordeaux : mariages, portraits, entreprises et événements."
+    }]
   }
   </script>
 </head>
@@ -253,10 +241,10 @@
         <h3>Une question ? Une demande de devis ?</h3>
         <p>N’hésitez pas à m’écrire ! Je vous répondrai en moins de 24 heures.</p>
 
-        <!-- NAP visible (matches JSON-LD) -->
+        <!-- NAP visible (matches JSON-LD exactly) -->
         <p>
-          <strong>Téléphone :</strong> <a href="tel:+33556677889">+33 5 56 67 78 89</a><br>
-          <strong>Adresse :</strong> 68 avenue Alsace-Lorraine, 33200 Bordeaux<br>
+          <strong>Téléphone :</strong> +33 (0)5 56 67 78 89<br>
+          <strong>Adresse :</strong> 68 avenue Alsace-Lorraine, 33200 Bordeaux, France<br>
           <strong>Horaires :</strong> Lundi–Vendredi, 10:00–19:00
         </p>
 
